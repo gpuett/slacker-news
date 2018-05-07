@@ -1,0 +1,9 @@
+<h4>All News Posts:</h4>
+<div *ngFor="let post of posts | async">
+  <div *ngIf="post.type === 'news'">
+    <div>
+      <h5>{{post.title}}</h5>
+      <h6>{{post.description}}</h6>
+    </div>
+  </div>
+</div>
