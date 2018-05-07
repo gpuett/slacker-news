@@ -1,11 +1,7 @@
-<p>Welcome to Slacker News</p>
+<h4>Welcome to Slacker News</h4>
 <h4>All Posts:</h4>
-  <div *ngFor="let post of posts | async" class="card">
-    <div class="card-title">
-      <h5>{{post.title}}</h5>
-    </div>
-    <div class="card-body">
-      <h6>{{post.description}}</h6>
-      <p>{{post.type}}</p>
-    </div>
-  </div>
+  <ol>
+    <li *ngFor="let post of posts | async"><h5>{{post.title}}</h5>
+    <h6>{{post.description}}</h6>
+    <p><em>{{post.type}}</em></p></li>
+  </ol>

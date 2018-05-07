@@ -1,0 +1,12 @@
+.container {
+  background-color: cornsilk;
+  padding: 20px;
+}
+.navbar {
+  background-color: orange;
+  color: black;
+}
+.navbar a {
+  color: black;
+  font-weight: bold;
+}

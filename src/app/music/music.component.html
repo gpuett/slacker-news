@@ -1,9 +1,9 @@
 <h4>All Music Posts:</h4>
-<div *ngFor="let post of posts | async">
+<ul *ngFor="let post of posts | async">
   <div *ngIf="post.type === 'music'">
-    <div>
+    <li>
       <h5>{{post.title}}</h5>
       <h6>{{post.description}}</h6>
-    </div>
+    </li>
   </div>
-</div>
+</ul>
